@@ -371,6 +371,7 @@ PRODUCT_COPY_FILES += \
     device/lge/d801/prebuilt/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
     device/lge/d801/prebuilt/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
     device/lge/d801/prebuilt/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so \
+    device/lge/d801/prebuilt/vendor/lib/libscale.so:system/vendor/lib/libscale.so \
     device/lge/d801/prebuilt/vendor/lib/libuiblur.so:system/vendor/lib/libuiblur.so
 
 # IR

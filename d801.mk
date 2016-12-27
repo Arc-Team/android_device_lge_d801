@@ -363,16 +363,16 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessingdescriptors
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/audio_effects.conf:system/vendor/etc/audio_effects.conf \
-    $(LOCAL_PATH)/configs/audio_policy.conf:system/etc/audio_policy.conf \
-    $(LOCAL_PATH)/configs/mixer_paths.xml:system/etc/mixer_paths.xml
+    device/lge/d801/prebuilt/vendor/etc/audio_effects.conf:system/vendor/etc/audio_effects.conf \
+    device/lge/d801/prebuilt/etc/audio_policy.conf:system/etc/audio_policy.conf \
+    device/lge/d801/prebuilt/etc/mixer_paths.xml:system/etc/mixer_paths.xml
 
 # Bluetooth
 PRODUCT_PACKAGES += \
     hwaddrs
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/bluetooth/bcm4335_prepatch.hcd:system/vendor/firmware/bcm4335_prepatch.hcd
+    device/lge/d801/prebuilt/vendor/firmware/bcm4335_prepatch.hcd:system/vendor/firmware/bcm4335_prepatch.hcd
 
 # BoringSSL compatability wrapper
 PRODUCT_PACKAGES += \
@@ -400,11 +400,11 @@ PRODUCT_PACKAGES += \
     gps.msm8974
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/gps/etc/flp.conf:system/etc/flp.conf \
-    $(LOCAL_PATH)/gps/etc/gps.conf:system/etc/gps.conf \
-    $(LOCAL_PATH)/gps/etc/izat.conf:system/etc/izat.conf \
-    $(LOCAL_PATH)/gps/etc/quipc.conf:system/etc/quipc.conf \
-    $(LOCAL_PATH)/gps/etc/sap.conf:system/etc/sap.conf
+    device/lge/d801/prebuilt/etc/flp.conf:system/etc/flp.conf \
+    device/lge/d801/prebuilt/etc/gps.conf:system/etc/gps.conf \
+    device/lge/d801/prebuilt/etc/izat.conf:system/etc/izat.conf \
+    device/lge/d801/prebuilt/etc/quipc.conf:system/etc/quipc.conf \
+    device/lge/d801/prebuilt/etc/sap.conf:system/etc/sap.conf
 
 # Init
 PRODUCT_PACKAGES += \
@@ -423,7 +423,7 @@ PRODUCT_PACKAGES += \
 
 # IRSC
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/sec_config:system/etc/sec_config
+    device/lge/d801/prebuilt/etc/sec_config:system/etc/sec_config
 
 # Lights
 PRODUCT_PACKAGES += \
@@ -445,8 +445,8 @@ PRODUCT_PACKAGES += \
     libstagefrighthw
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/media_codecs.xml:system/etc/media_codecs.xml \
-    $(LOCAL_PATH)/configs/media_profiles.xml:system/etc/media_profiles.xml \
+    device/lge/d801/prebuilt/etc/media_codecs.xml:system/etc/media_codecs.xml \
+    device/lge/d801/prebuilt/etc/media_profiles.xml:system/etc/media_profiles.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml
@@ -457,8 +457,8 @@ PRODUCT_PACKAGES += \
     com.android.nfc_extras
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/nfc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
-    $(LOCAL_PATH)/nfc/nfcee_access.xml:system/etc/nfcee_access.xml \
+    device/lge/d801/prebuilt/etc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
+    device/lge/d801/prebuilt/etc/nfcee_access.xml:system/etc/nfcee_access.xml \
 
 # Power
 PRODUCT_PACKAGES += \
@@ -479,16 +479,16 @@ PRODUCT_PACKAGES += \
 
 # Sensors
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/sensor_def_common.conf:system/etc/sensor_def_common.conf
+    device/lge/d801/prebuilt/etc/sensor_def_common.conf:system/etc/sensor_def_common.conf
 
 # Thermal
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/thermal-engine-8974.conf:system/etc/thermal-engine-8974.conf
+    device/lge/d801/prebuilt/etc/thermal-engine-8974.conf:system/etc/thermal-engine-8974.conf
 
 # Touchscreen
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
-    $(LOCAL_PATH)/keylayout/touch_dev.idc:system/usr/idc/touch_dev.idc
+    device/lge/d801/prebuilt/usr/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
+    device/lge/d801/prebuilt/usr/idc/touch_dev.idc:system/usr/idc/touch_dev.idc
 
 # Wifi
 PRODUCT_PACKAGES += \
@@ -499,7 +499,7 @@ PRODUCT_PACKAGES += \
     wpa_supplicant.conf
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/bcmdhd.cal:system/etc/wifi/bcmdhd.cal
+    device/lge/d801/prebuilt/etc/wifi/bcmdhd.cal:system/etc/wifi/bcmdhd.cal
 
 $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/config/config-bcm.mk)
 
@@ -516,8 +516,8 @@ PRODUCT_PACKAGES += \
     NfcNci
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/nfc/libnfc-brcm-20791b05.conf:system/etc/libnfc-brcm-20791b05.conf
+    device/lge/d801/prebuilt/etc/libnfc-brcm-20791b05.conf:system/etc/libnfc-brcm-20791b05.conf
 
 # Sensors
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/sensor_def_d801.conf:system/etc/sensor_def_variable.conf
+    device/lge/d801/prebuilt/etc/sensor_def_d801.conf:system/etc/sensor_def_variable.conf

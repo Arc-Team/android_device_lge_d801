@@ -83,7 +83,6 @@ PRODUCT_PACKAGES += \
 
 # Misc
 PRODUCT_PACKAGES += \
-    Gello \
     Snap \
     libtime_genoff \
     TimeService \

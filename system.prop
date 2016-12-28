@@ -49,6 +49,12 @@ audio.offload.video=true
 av.streaming.offload.enable=true
 media.aac_51_output_enabled=true
 
+# Network
+net.dns1=8.8.8.8
+net.dns2=8.8.4.4
+net.ppp0.dns1=8.8.8.8
+net.ppp0.dns2=8.8.4.4
+
 # NFC
 nfc.app_log_level=2
 nfc.enable_protocol_log=0

@@ -1,1 +1,2 @@
 add_lunch_combo cm_d801-userdebug
+add_lunch_combo pac_d801-userdebug

@@ -118,9 +118,8 @@ TW_THEME := portrait_hdpi
 
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := true
-COMMON_GLOBAL_CFLAGS += \
-    -DBOARD_CHARGING_CMDLINE_NAME='"androidboot.mode"' \
-    -DBOARD_CHARGING_CMDLINE_VALUE='"chargerlogo"'
+BOARD_CHARGING_CMDLINE_NAME := "androidboot.mode"
+BOARD_CHARGING_CMDLINE_VALUE := "chargerlogo"
 
 # Qualcomm
 BOARD_USES_QCOM_HARDWARE := true

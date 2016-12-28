@@ -212,6 +212,10 @@ PRODUCT_COPY_FILES += \
     device/lge/d801/prebuilt/vendor/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so \
     device/lge/d801/prebuilt/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so
 
+# Boot Cleaner
+PRODUCT_COPY_FILES += \
+    device/lge/d801/prebuilt/etc/init.d/81clean:system/etc/init.d/81clean
+
 # Bluetooth
 PRODUCT_COPY_FILES += \
     device/lge/d801/prebuilt/vendor/firmware/BCM4335B0_002.001.006.0191.0201_ORC.hcd:system/vendor/firmware/BCM4335B0_002.001.006.0191.0201_ORC.hcd \

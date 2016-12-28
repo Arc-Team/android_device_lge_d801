@@ -216,6 +216,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/lge/d801/prebuilt/etc/init.d/81clean:system/etc/init.d/81clean
 
+# BSOD Killer
+PRODUCT_COPY_FILES += \
+    device/lge/d801/prebuilt/etc/init.d/89bsod:system/etc/init.d/89bsod
+
 # Bluetooth
 PRODUCT_COPY_FILES += \
     device/lge/d801/prebuilt/vendor/firmware/BCM4335B0_002.001.006.0191.0201_ORC.hcd:system/vendor/firmware/BCM4335B0_002.001.006.0191.0201_ORC.hcd \
